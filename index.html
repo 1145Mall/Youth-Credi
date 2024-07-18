@@ -1,162 +1,264 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>W3.CSS Template</title>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
 </style>
 </head>
 <body>
 
-<!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Youth Credit-</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Finance the <br>Youth</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">How to Build Credit</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Start a buisness</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">How does Credit work </a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About us</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
 </nav>
 
-<!-- Top menu -->
-<div class="w3-top">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <div class="w3-right w3-padding-16">Mail</div>
-    <div class="w3-center w3-padding-16">My Food</div>
-  </div>
-</div>
-  
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Finance the Youth </span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
 <!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
-      <h3>The Perfect Sandwich, A Real NYC Classic</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/steak.jpg" alt="Steak" style="width:100%">
-      <h3>Let Me Tell You About This Steak</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/cherries.jpg" alt="Cherries" style="width:100%">
-      <h3>Cherries, interrupted</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      <p>What else?</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
-      <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:30px" id="showcase">
+    <h1 class="w3-jumbo"><b>First off what is Credit and how can you build it?</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>
+      Credit is an agreement between a lender and a borrower that allows the borrower to obtain funds, goods or services now and repay them later </b></h1>
+    <hr style=" font-size:80px;border:5px solid black" class="w3-round">
   </div>
   
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center">
-    <div class="w3-quarter">
-      <img src="/w3images/popsicle.jpg" alt="Popsicle" style="width:100%">
-      <h3>All I Need Is a Popsicle</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+    
+      <p> -Open a Credit Account: Start with a credit card or small loan." </p>
+    <p>-Make Timely Payments: Pay bills on time every month." </p>
+      <p>Keep Balances Low: Aim to use less than 30% of your credit limit." </p>
     </div>
-    <div class="w3-quarter">
-      <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
-      <h3>Salmon For Your Skin</h3>
-      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+
+    <div class="w3-half">
+      <p> -Monitor Your Credit Report: Check for errors and understand your score." </p>
+      <p>-Diversify Credit Types: Mix credit cards with installment loans."</p>
+    </p>-Avoid Opening Too Many Accounts: Manage accounts wisely."<
     </div>
-    <div class="w3-quarter">
-      <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
-      <h3>The Perfect Sandwich, A Real Classic</h3>
-      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
-    <div class="w3-quarter">
-      <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
-      <h3>Le French</h3>
-      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+ </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
     </div>
   </div>
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-  
-  <hr id="about">
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b> Business creation</b></h1>
+    <hr style="width:50px;border:5px solid yellow" class="w3-round">
+    <h1 style= " font-size: xx-large; font-family: 'Courier New', Courier, monospace;"> How can you build a Business as Youth? </h1>
+    <p>
+      <p style ="font-size: larger; color: black;">Building a business as a youth can be both challenging and rewarding. </p>
+        <p>Here are some steps to help you get started: </p>
 
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    <h3>About Me, The Food Man</h3><br>
-    <img src="/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
-    <div class="w3-padding-32">
-      <h4><b>I am Who I Am!</b></h4>
-      <h6><i>With Passion For Real, Good Food</i></h6>
-      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-    </div>
+<h2> 1. Identify Your Passion and Strengths:</h2>
+
+<h3> Think about what you're passionate about and what skills you possess. Your business will thrive if it aligns with your interests and strengths.</h3>
+<h2> 2.Research and Validate Your Idea:</h2>
+
+<h3>Conduct thorough market research to understand if there's a demand for your product or service. Validate your idea by talking to potential customers or mentors in the industry.</h3>
+ <h2>3.Create a Business Plan:</h2>
+
+<h3>Outline your business goals, target audience, marketing strategy, financial plan, and operational details in a business plan. This will serve as a roadmap for your business.</h3>
+<h2>4.Seek Mentorship and Guidance:</h2>
+
+<h3>Find mentors who have experience in entrepreneurship or in your industry. They can provide valuable advice, guidance, and networking opportunities. </h3>
+<h2>5.Start Small and Scale Gradually:</h2>
+
+<h3>Begin with a small-scale version of your business to minimize risk and gain valuable experience. As you learn and grow, you can gradually expand and refine your offerings.</h3>
+<h2>6.Build Your Brand and Online Presence: </h2>
+
+<h3>Create a strong brand identity that reflects your values and appeals to your target audience. Establish an online presence through a website and social media to reach potential customers.</h3>
+<h2>7.Focus on Customer Service: </h2>
+
+<h3>Provide excellent customer service to build loyalty and positive word-of-mouth recommendations. Listen to customer feedback and continuously improve your offerings.</h3>
+<h2>8.Manage Finances Wisely:</h2>
+
+<h3>Keep track of your expenses and revenue. Monitor your cash flow closely and make financial decisions based on data and projections.</h3>
+<h2>9.Stay Persistent and Adapt:</h2>
+
+<h3>Entrepreneurship can be challenging, so stay persistent in pursuing your goals. Be willing to adapt to changes in the market and learn from both successes and failures.</h3>
+<h2> 10.Educated and Network:</h2>
+
+<h3>Stay updated on industry trends and continue to learn through courses, workshops, or networking events. Build relationships with other entrepreneurs and professionals who can offer support and collaboration opportunities.</h3>
+<h2>11.Comply with Legal Requirements:</h2>
+
+<h3>Understand the legal and regulatory requirements for starting and operating a business in your area. This includes business licenses, permits, taxes, and any specific regulations related to your industry.</h3>
+<h2>12.Celebrate Milestones and Learn from Setbacks: </h2>
+
+<h3>Celebrate your achievements, no matter how small, and learn from setbacks. Every experience will contribute to your growth as an entrepreneur.
+Starting a business as a youth requires determination, creativity, and a willingness to learn. By following these steps and seeking support from mentors and peers, you can increase your chances of building a successful business venture.</h3>
+
+
+
+
+    
+    
+    </p>
+
   </div>
-  <hr>
   
-  <!-- Footer -->
-  <footer class="w3-row-padding w3-padding-32">
-    <div class="w3-third">
-      <h3>FOOTER</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  
-    <div class="w3-third">
-      <h3>BLOG POSTS</h3>
-      <ul class="w3-ul w3-hoverable">
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>But How does Credit work?</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p> <b> Credit is a financial mechanism that enables individuals
+      and businesses to borrow money or obtain goods and services
+    with a promise to repay at a later date. It operates through various channels and forms, each serving different purposes and terms: </b> </p>
+    <p style="font-size: x-large";>
+      Credit can work in many different ways:
+    </p>
+    <p><b>Credit Cards</b>:</p>
+    <p><b>Loans</b>:</p>
+    <p><b>Lines of Credit</b>:</p>
+    <p><b>Interest Rates</b>:</p>
+    <p><b>Credit Scores</b>:</p>
+    <p><b>Repayment Terms</b>:</p>
+  </div>
+
+  <
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Service Systems.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p style="font-size:x-large";>"Finance the youth" offers services to young black male youth to help start business, to be aware of money, and know how to handle money. </p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"> group advice</li>
+        <li class="w3-padding-16">Group membership opportunities</li>
+        <li class="w3-padding-16">lessons </li>
+        <li class="w3-padding-16">classes on python</li>
+        <li class="w3-padding-16"> classes on HDML</li>
         <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
+          <h2>$ 75</h2>
+          <span class="w3-opacity">per room</span>
         </li>
-        <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Ipsum</span><br>
-          <span>Praes tinci sed</span>
-        </li> 
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black"></button>
+        </li>
       </ul>
     </div>
-
-    <div class="w3-third w3-serif">
-      <h3>POPULAR TAGS</h3>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
-      </p>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">private advice</li>
+        <li class="w3-padding-16">opportunities to meet with buisnesses</li>
+        <li class="w3-padding-16">private lessons</li>
+        <li class="w3-padding-16">classes on AI and python</li>
+        <li class="w3-padding-16">classes on HDML and CSS</li>
+        <li class="w3-padding-16">
+          <h2>$ 150</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black"></button>
+        </li>
+      </ul>
     </div>
-  </footer>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Contact us for questions</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
 
 <!-- End page content -->
 </div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 
 <script>
 // Script to open and close sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
 }
  
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
 }
 </script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
